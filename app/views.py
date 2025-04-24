@@ -167,7 +167,8 @@ class CategoriesViewSet(ModelViewSet):
     serializer_class = CategoriesSerializer
     permission_classes = [IsAuthenticatedOrReadOnly] 
     pagination_class = Pagination 
-
+    # pagination_class = StandardLimitOffsetPagination
+    # pagination_class = CustomPagination
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
